@@ -1,10 +1,36 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div class="locale-changer">
+    語言選單 : <select v-model="$i18n.locale">
+      <option v-for="locale in $i18n.availableLocales" :key="`locale-${locale}`" :value="locale">
+        {{ locale }}
+      </option>
+    </select>
   </div>
-  <router-view/>
+  <Home />
+  <div>-------------</div>
+    <pre>{{ JSON.stringify(langJson, null, 2) }}</pre>
+  <div>-------------</div>
+
 </template>
+
+<script>
+import { ref } from 'vue';
+import message from './store/message';
+import Home from './views/Home.vue';
+
+export default {
+  components: {
+    Home,
+  },
+  setup() {
+    const langJson = ref(message);
+
+    return {
+      langJson,
+    };
+  },
+};
+</script>
 
 <style lang="scss">
 #app {

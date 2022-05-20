@@ -1,5 +1,12 @@
 import { createApp } from 'vue';
+import { createI18n } from 'vue-i18n';
 import App from './App.vue';
 import router from './router';
+import messages from './store/message';
 
-createApp(App).use(router).mount('#app');
+const i18n = createI18n({
+  locale: '中文',
+  messages,
+});
+
+createApp(App).use(router).use(i18n).mount('#app');
