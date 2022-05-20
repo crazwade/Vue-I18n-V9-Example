@@ -111,5 +111,5 @@ export default messages;
         <!-- HTML messages(br) : <span v-html="$t('message.html')" /> -->
       </div>
     </h3>
-  </div>
-  ```
+</div>
+```
