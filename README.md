@@ -77,7 +77,7 @@ const messages = {
 export default messages;
 ```
 
-##used
+## use
 ```
 <div class="home">
     <h3>
