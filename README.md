@@ -1,24 +1,15 @@
-# vue18nv9example
+# Example of vue-i18n
 
-## Project setup
+## 📔 Documentation
 ```
-npm install
-```
+About Vue I18n v8.x, See [here](https://kazupon.github.io/vue-i18n/)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
+If you want to read Vue I18n v9 docs, See [here](https://vue-i18n.intlify.dev/)
 ```
 
-### Compiles and minifies for production
+### ⚠️ NOTICE
 ```
-npm run build
-```
+This repository is for Vue I18n v8.x and Vue 2
 
-### Lints and fixes files
+If you want to know about how to usage for Vue I18n v9 on Vue 3, [See the this repository](https://github.com/intlify/vue-i18n-next))
 ```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
